@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/style2.css"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title> Yash Family Dhaba </title>
+</head>
+<body>
+    
+    <div class="navbar">pip
+        <a href="menu2.html">
+           <h1 class="head1">Yash Family Dhaba</h1>
+            
+        </a>
+        
+        <div class="dropdown">
+         <input onclick="myFunction()" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" class="dropbtn">
+            <div id="myDropdown" class="dropdown-content">
+             
+              
+            </div>
+          </div>
+          
+
+        <a href="cart.html"> 
+            <div class="cart">Cart
+                <i class="bi bi-basket"></i>
+                <div id="cartamount" class="cartamount"></div>
+            </div>   
+        </a>
+
+    </div>
+
+
+    <div class="scrolling">
+    <h1 class="animation"> Welcome to Yash Family Dhaba </h1>
+    
+  
+     </div><hr class="hr5"> 
+     
+     
+     <div class="welcome5">
+       <img class=img6 src="https://cdn.dotpe.in/longtail/store-logo/6755205/gNSMwRPo.jpeg">
+        <h1 class="welcome4"> Yash Family Dhaba_est2016</h1>
+     </div>
+<hr>
+    
+    <div class="design1">
+        <div class="note5">
+        <h1 class="design2">Grab Your Tummy's Need</h1>
+        <p class="write">Welcome To Yash Family Dhaba. Your Tummy Need is here. Hunger is very importent in life. Couse if you hungry in your mind for learing that grow your Success. and if you hungry in your tummy that grow your body.  </p>
+        
+       </div>
+        <img class="img5" src="https://w0.peakpx.com/wallpaper/467/393/HD-wallpaper-food-dessert-still-life.jpg">
+    </div>
+    <div class="background">
+    <h1 class="categories">OrdeR   </h1>
+   <h1 class="down"><i class="bi bi-chevron-compact-down"></i></h1>
+
+   
+       
+
+
+
+    <div class="shop" id="shop">
+    </div>
+    </div>       
+  
+        
+      
+    
+
+
+</body>
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    
+<script src="src/data.js"></script>
+<script src="src/main.js"></script>
+
+</html>

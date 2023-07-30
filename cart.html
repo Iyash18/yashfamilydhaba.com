@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style2.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title> Yash Family Dhaba  </title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="menu2.html">
+            <img class="img2" width="50px" src="https://cdn.dotpe.in/longtail/store-logo/6755205/gNSMwRPo.jpeg">  
+            </a>
+        <a href="cart.html">
+          <div class="cart">
+                <i class="bi bi-basket"></i>
+                <div id="cartamount" class="cartamount">
+                
+                </div>
+            </div>   
+        </a>
+           
+    </div>
+    <div id="label" class="text-center"></div>
+    <div class="shoping-cart" id="shoping-cart"></div>
+    
+</body><hr class="hr">
+<script src="src/data.js"></script>
+ <script src="src/cart.js"></script>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style2.css"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Confirm Your Order</title>
+</head>
+<body><form onsubmit="sendEmail(); reset(); return false;">
+    <div class="paymentconfirm" id="paymentconfirm">
+        
+    <div class="flex justify-center">
+        <div class="flex flex-col md:flex-row justify-center max-w-7xl  mt-5">
+            <div class="flex flex-col px-7 py-2 bg-slate-200  w-full rounded-tl-3xl">
+                <div class="text-lg font-semibold">
+                    <h1> Confirm Your OrdeR</h1>
+                </div>
+                <div class="flex flex-col md:flex-row ">
+                    <div class="">
+                        <input type="text" name="" id="" placeholder="Enter your name" class="w-full border-2 border-white px-3 py-1 text-sm outline-none placeholder:text-black placeholder:opacity-40 mt-4 mr-2 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                    </div>
+                   
+                </div>
+                <input type="email" name="" id="" placeholder="Enter your address" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                <input type="tel" name="" id="" placeholder="Phone Number" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                <input type="text" name="" id="" placeholder="Subject" class="w-full border-2 border-white text-sm outline-none px-3 py-1 placeholder:text-black placeholder:opacity-40 mt-4 focus:border-blue-500 duration-200 ease-in-out rounded-lg">
+                  <h1 class="text-lg font-semibold">Payment Mode :</h1>
+                  <div class="col">
+                    <input type="radio" class="radio" name="payment" >Online<br>
+                    <input type="radio" class="radio" name="payment" >Cash On Delivery
+
+                  </div>
+                                                        
+                   
+                    
+                <button class="bg-blue-900 hover:bg-blue-600 px-4 font-semibold text-white w-1/2 text-center mx-auto my-3 rounded-tr-lg rounded-bl-lg">Submit</button>
+                </form>
+            </div><hr>
+        
+            <div class="flex flex-col bg-blue-900 text-white md:w-[65%] rounded-br-3xl">
+                <h1 class="font-semibold px-5 my-5">Contact info</h1>
+                <div class="flex px-5 space-x-2">
+                    <ion-icon name="call-sharp" class="text-orange-500  mt-1 my-3"></ion-icon>
+                    <span class="text-sm">+91 8433104864</span>
+                </div>
+                <div class="flex px-5 space-x-2">
+                    <ion-icon name="mail" class="text-orange-500  mt-1 my-3"></ion-icon>
+                    <span class="text-sm">yashfamilydhaba@gmail.com</span>
+                </div>
+                <div class="flex px-5 space-x-2">
+                    <ion-icon name="globe-outline" class="text-orange-500 mt-1 my-3" ></ion-icon>
+                    <span class="text-sm"></span>
+                </div>
+                <div class="px-5 space-x-5 mt-7 mx-auto mb-5" >
+                    <a href="#"><i class="fa-brands fa-facebook-f text-white text-2xl"></i></a>
+                    <a href="https://instagram.com/yash_family_dhaba_est2016?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram text-red-500  text-2xl"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ygoutam934@gmail.com",
+    Password : "Yashanu@1809",
+    To : 'yashfamilydhaba@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Address",
+    
+  }).then(
+  message => alert(message)
+ );
+}
+
+</script>
+ 
+    <script src="https://kit.fontawesome.com/290d4f0eb4.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
